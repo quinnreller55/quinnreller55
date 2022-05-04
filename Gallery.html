@@ -33,6 +33,53 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -49,31 +96,44 @@ body {
    <a href="MPA.html">Mizzou Pickleball Assosciation</a>
  </div>
 
- <div class="card-group">
-    <div class="card">
-      <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tub.JPG" class="card-img-top" alt="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tub.JPG">
-      <div class="card-body">
-        <h5 class="card-title">Tucker</h5>
-        <p class="card-text">"My dog Tucker running around."</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+ <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tub.JPG">
+        <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tub.JPG" alt="Tucker" width="600" height="400">
+      </a>
+      <div class="desc">Tucker running around at the park</div>
     </div>
-    <div class="card">
-      <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby%2Bbear.JPG" class="card-img-top" alt="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby%2Bbear.JPG">
-      <div class="card-body">
-        <h5 class="card-title">Me and my Dogs</h5>
-        <p class="card-text">Me with my two dogs Lola and Tucker.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby%2Bbear.JPG">
+        <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby%2Bbear.JPG" alt="Tuck+Bear" width="600" height="400">
+      </a>
+      <div class="desc">Lola, Tucker, and I</div>
     </div>
-    <div class="card">
-      <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubbymountain.JPG" class="card-img-top" alt="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubbymountain.JPG">
-      <div class="card-body">
-        <h5 class="card-title">Me and Tucker</h5>
-        <p class="card-text">Me and Tucker at the top of a mountain in Colorado.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby.JPG">
+        <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubby.JPG" alt="Tubby" width="600" height="400">
+      </a>
+      <div class="desc">Funny picture of Tucker</div>
     </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubbymountain.JPG">
+        <img src="https://github.com/quinnreller55/quinnreller55/blob/main/Pics/tubbymountain.JPG" alt="Tucker Mountain" width="600" height="400">
+      </a>
+      <div class="desc">Tucker and I at the top of a mountain in Colorado</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+
 </div>
 </body>
 </html>
