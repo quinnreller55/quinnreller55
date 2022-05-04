@@ -40,6 +40,29 @@ h1 {
 ul.a {
   list-style-type: circle;
 }
+
+#movies {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#movies td, #movies th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#movies tr:nth-child(even){background-color: #f2f2f2;}
+
+#movies tr:hover {background-color: #ddd;}
+
+#movies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -68,5 +91,48 @@ ul.a {
    <li>Camping</li>
    <li>Skiing</li>
  </ul>
+ <h2>My Favorite Movies</h2>
+ <table id="Movies">
+  <tr>
+    <th>Movie</th>
+    <th>Year</th>
+    <th>My Rating</th>
+  </tr>
+  <tr>
+    <td>Robocop</td>
+    <td>1987</td>
+    <td>9.6/10</td>
+  </tr>
+  <tr>
+    <td>A Bridge Too Far</td>
+    <td>1977</td>
+    <td>8.2/10</td>
+  </tr>
+  <tr>
+    <td>Mad Max: The Road Warrior</td>
+    <td>1981</td>
+    <td>9/10</td>
+  </tr>
+  <tr>
+    <td>The Patriot</td>
+    <td>2000</td>
+    <td>8.7/10</td>
+  </tr>
+  <tr>
+    <td>Blade</td>
+    <td>1998</td>
+    <td>8.5/10</td>
+  </tr>
+  <tr>
+    <td>There Will Be Blood</td>
+    <td>2007</td>
+    <td>9.1/10</td>
+  </tr>
+  <tr>
+    <td>Full Metal Jacket</td>
+    <td>1987</td>
+    <td>8/10</td>
+  </tr>
+</table>
 </body>
 </html>
