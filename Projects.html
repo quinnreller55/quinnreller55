@@ -51,5 +51,32 @@ h1 {
    <a href="Contact.html">Contact Me</a>
    <a href="MPA.html">Mizzou Pickleball Assosciation</a>
  </div>
+ <h2>Turtle Graphics Code</h2>
+ <p>
+  import random
+  from turtle import Turtle
+  
+  def reocto(turtle, angle, sides, bigger, length):
+      colors = ["red", "orange", "brown", "green", "blue", "purple"]
+      color = random.choice(colors)
+      turtle.color(color)
+      turtle.right(angle)
+      turtle.forward(bigger)
+      octo = 360.0/sides
+      for x in range(sides):
+          turtle.forward(length)
+          turtle.right(octo)
+          turtle.left(angle)
+      length = length + bigger
+      if (length > 5):
+          reocto(turtle, angle, sides, bigger, length)
+  
+  def main():
+      turt = Turtle()
+      turt.speed(0)
+      reocto(turt, 6, 8, 2, 4)
+  
+  main()
+ </p>
 </body>
 </html>
